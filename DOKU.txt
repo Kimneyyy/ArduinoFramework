@@ -1,0 +1,9 @@
+
+Timer Erstellen in Arduino_setup():
+    Globale funktion:
+        timerID = this-registerTimer(1000, [this]() { testTimer(); });
+        startTimer(timerID);
+    
+    Funktion aus Klasse:
+        timerID = this-registerTimer(1000, [this]() { externeKlasse->testTimer(); });
+        startTimer(timerID);
